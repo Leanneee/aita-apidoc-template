@@ -1,0 +1,23 @@
+{
+  "name": "aita-apidoc-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appintheair/aita-apidoc-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appintheair/aita-apidoc-template/issues"
+  },
+  "homepage": "https://github.com/appintheair/aita-apidoc-template#readme"
+}
