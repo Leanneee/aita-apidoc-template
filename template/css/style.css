@@ -190,6 +190,10 @@ pre {
   background: transparent;
 }
 
+code {
+  color: #444;
+}
+
 code.language-text {
   word-wrap: break-word;
 }
@@ -771,7 +775,7 @@ body::-webkit-scrollbar-thumb
 
 button.version, button#version {
   padding: 3px 8px;
-  background: transparent;
+  /*background: transparent;*/
 }
 
 button.version {

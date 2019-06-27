@@ -701,6 +701,7 @@ function ($, _, locale, Handlebars, apiProject, apiData, prettyPrint, sampleRequ
         fields._hasTypeInInfoFields = _hasTypeInFields(entry.info.fields);
 
       var content = templateCompareArticle(fields);
+      var $row = $root.parent().parent();
       $root.after(content);
       var $content = $root.next();
 
@@ -787,7 +788,7 @@ function ($, _, locale, Handlebars, apiProject, apiData, prettyPrint, sampleRequ
    * Render original Article and remove the current visible Article.
    */
   function resetArticle(group, name, version) {
-    var $root = $('article[data-group=\'' + group + '\'][data-name=\'' + name + '\']:visible');
+    var $root = $('article[data-group=\'' + group + '\'][data-name=\'' + name + '\']:visible').parent().parent();
     var content = renderArticle(group, name, version);
 
     $root.after(content);
@@ -799,6 +800,7 @@ function ($, _, locale, Handlebars, apiProject, apiData, prettyPrint, sampleRequ
     $('#sidenav li[data-group=\'' + group + '\'][data-name=\'' + name + '\'][data-version=\'' + version + '\']').removeClass('has-modifications');
 
     $root.remove();
+    prettyPrint();
     return;
   }
 
